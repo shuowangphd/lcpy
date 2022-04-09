@@ -1,0 +1,5 @@
+class Solution:
+    def reverse(self, x: int) -> int:
+        s = [1,-1][x < 0]
+        r = int(str(s*x)[::-1])
+        return s*r*(r<2**31)
